@@ -1,0 +1,40 @@
+/* Mengatur font utama dan warna latar belakang */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9fafb; /* Sesuai dengan kelas Tailwind bg-gray-50 */
+}
+
+/* Warna kustom */
+.bg-navy { background-color: #0a192f; }
+.text-gold { color: #ffd700; }
+.bg-emerald-dark { background-color: #065f46; }
+.text-emerald-dark { color: #065f46; }
+.hover-bg-emerald-dark:hover { background-color: #044330; }
+
+/* Kelas untuk menyembunyikan halaman yang tidak aktif */
+.page-content.hidden {
+    display: none;
+}
+
+/* Gaya untuk link navigasi yang sedang aktif */
+.nav-link.active {
+    background-color: #ffd700;
+    color: #0a192f;
+    font-weight: 600;
+}
+
+/* Animasi transisi halus saat berpindah halaman */
+.page-content {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(10px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
